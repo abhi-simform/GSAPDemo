@@ -1,0 +1,25 @@
+@use '/src/assets/scss/variables.scss' as *;
+@use '/src/assets/scss/mixins.scss' as *;
+@use '/src/assets/scss/functions.scss' as *;
+
+.home {
+  h1 {
+    text-align: center;
+  }
+  .boxes {
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+    .box {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 0.5rem;
+      background-color: var(--cyan-800);
+      color: var(--white);
+      display: grid;
+      place-content: center;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+  }
+}

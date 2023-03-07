@@ -1,0 +1,43 @@
+@use '/src/assets/scss/variables.scss' as *;
+
+@mixin coloropacity($usrcolor, $usrshade, $opacity) {
+  @each $color, $shades in $colors {
+    @if $usrcolor == $color {
+      @each $shade, $value in $shades {
+        @if $usrshade == $shade {
+          color: rgba($value, $opacity);
+        }
+      }
+    }
+  }
+}
+
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size) {
+  @media (min-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}
+
+@mixin custom-breakpoint-up($size) {
+  @media (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin custom-breakpoint-down($size) {
+  @media (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin custom-breakpoint-range($min-size, $max-size) {
+  @media (min-width: $min-size) and (max-width: $max-size) {
+    @content;
+  }
+}

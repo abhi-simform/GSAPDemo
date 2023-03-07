@@ -1,0 +1,45 @@
+@use '/src/assets/scss/variables.scss' as *;
+@use '/src/assets/scss/mixins.scss' as *;
+@use '/src/assets/scss/functions.scss' as *;
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  padding-left: rem(20);
+  padding-right: rem(20);
+  
+  @include breakpoint-up(md) {
+    max-width: rem(740);
+  }
+  @include breakpoint-up(lg) {
+    max-width: rem(980);
+  }
+  @include breakpoint-up(xl) {
+    max-width: rem(1240);
+  }
+  @include breakpoint-up(xxl) {
+    max-width: rem(1480);
+  }
+  &--fluid {
+    
+    @include breakpoint-up(md) {
+      max-width: unset;
+      padding-left: rem(48);
+      padding-right: rem(48);
+    }
+    @include breakpoint-up(lg) {
+      max-width: unset;
+    }
+    @include breakpoint-up(xl) {
+      max-width: unset;
+      padding-left: rem(64);
+      padding-right: rem(64);
+    }
+    @include breakpoint-up(xxl) {
+      max-width: unset;
+      padding-left: rem(80);
+      padding-right: rem(80);
+    }
+  }
+}

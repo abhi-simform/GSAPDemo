@@ -1,0 +1,14 @@
+@use '/src/assets/scss/variables.scss' as *;
+@use '/src/assets/scss/mixins.scss' as *;
+@use '/src/assets/scss/functions.scss' as *;
+
+@each $color, $shades in $colors {
+  @each $shade, $value in $shades {
+    .text-#{'' + $color}-#{$shade} {
+      color: $value;
+    }
+    .bg-#{'' + $color}-#{$shade} {
+      background-color: $value;
+    }
+  }
+}

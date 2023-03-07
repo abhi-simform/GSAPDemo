@@ -1,0 +1,108 @@
+@use '/src/assets/scss/variables.scss' as *;
+@use '/src/assets/scss/mixins.scss' as *;
+@use '/src/assets/scss/functions.scss' as *;
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: 'Radio Canada', sans-serif;
+  @each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      --#{"" + $color}-#{$shade}: #{$value};
+    }
+  }
+  --white: #ffffff;
+  --black: #000000;
+  --shadow-color: 220 3% 15%;
+  --shadow-strength: 1%;
+  --shadow-1: 0 1px 2px -1px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 9%));
+  --shadow-2: 0 3px 5px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 3%)),
+    0 7px 14px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 5%));
+  --shadow-3: 0 -1px 3px 0 hsl(var(--shadow-color) / calc(var(--shadow-strength) + 2%)),
+    0 1px 2px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 2%)),
+    0 2px 5px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 4%)),
+    0 4px 12px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 5%)),
+    0 12px 15px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 7%));
+  --shadow-4: 0 -2px 5px 0 hsl(var(--shadow-color) / calc(var(--shadow-strength) + 2%)),
+    0 1px 1px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 3%)),
+    0 2px 2px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 3%)),
+    0 5px 5px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 4%)),
+    0 9px 9px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 5%)),
+    0 16px 16px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 6%));
+  --shadow-5: 0 -1px 2px 0 hsl(var(--shadow-color) / calc(var(--shadow-strength) + 2%)),
+    0 2px 1px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 3%)),
+    0 5px 5px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 3%)),
+    0 10px 10px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 4%)),
+    0 20px 20px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 5%)),
+    0 40px 40px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 7%));
+  --shadow-6: 0 -1px 2px 0 hsl(var(--shadow-color) / calc(var(--shadow-strength) + 2%)),
+    0 3px 2px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 3%)),
+    0 7px 5px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 3%)),
+    0 12px 10px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 4%)),
+    0 22px 18px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 5%)),
+    0 41px 33px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 6%)),
+    0 100px 80px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 7%));
+  --inner-shadow-0: inset 0 0 0 1px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 9%));
+  --inner-shadow-1: inset 0 1px 2px 0 hsl(var(--shadow-color) / calc(var(--shadow-strength) + 9%));
+  --inner-shadow-2: inset 0 1px 4px 0 hsl(var(--shadow-color) / calc(var(--shadow-strength) + 9%));
+  --inner-shadow-3: inset 0 2px 8px 0 hsl(var(--shadow-color) / calc(var(--shadow-strength) + 9%));
+  --inner-shadow-4: inset 0 2px 14px 0 hsl(var(--shadow-color) / calc(var(--shadow-strength) + 9%));
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+  &:visited {
+    color: inherit;
+  }
+}
+
+@import './utility.scss';

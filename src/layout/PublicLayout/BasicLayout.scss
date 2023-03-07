@@ -1,0 +1,9 @@
+@use '/src/assets/scss/variables.scss' as *;
+@use '/src/assets/scss/mixins.scss' as *;
+@use '/src/assets/scss/functions.scss' as *;
+
+.basic {
+  &__page {
+    padding-top: 2rem;
+  }
+}
