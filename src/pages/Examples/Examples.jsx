@@ -6,8 +6,10 @@ function Examples() {
   return (
     <Container className='examples basic__page'>
       <h1>Examples</h1>
-      <div className="examples">
-        <Link to='/examples/animatedcard'>Animated Card</Link>
+      <div className='links'>
+        <Link className='links__item' to='/examples/animatedcard'>
+          Animated Card
+        </Link>
       </div>
     </Container>
   );

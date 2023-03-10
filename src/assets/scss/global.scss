@@ -100,7 +100,8 @@ h3 {
 
 a {
   text-decoration: none;
-  &:visited {
+  color: inherit;
+  :where(:visited) {
     color: inherit;
   }
 }
