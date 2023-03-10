@@ -26,20 +26,6 @@ function Home() {
         .to(boxes[2], { rotate: 360, duration: 2 }, '<')
         .to(boxes[2], { backgroundColor: '#e11d48', duration: 2 }, '<')
         .to(content[2], { rotate: -360, duration: 2 }, '<')
-        .to(boxes[0], { y: 224, duration: 1 })
-        .to(boxes[2], { y: -224, duration: 1 })
-        .to(boxes[2], { x: 0, duration: 2 })
-        .to(boxes[2], { rotate: -360, duration: 2 }, '<')
-        .to(boxes[2], { backgroundColor: '#9333ea', duration: 2 }, '<')
-        .to(content[2], { rotate: 360, duration: 2 }, '<')
-        .to(boxes[1], { x: 0, duration: 2 })
-        .to(boxes[1], { rotate: -360, duration: 2 }, '<')
-        .to(boxes[1], { backgroundColor: '#9333ea', duration: 2 }, '<')
-        .to(content[1], { rotate: 360, duration: 2 }, '<')
-        .to(boxes[0], { x: 0, duration: 2 })
-        .to(boxes[0], { rotate: -360, duration: 2 }, '<')
-        .to(boxes[0], { backgroundColor: '#9333ea', duration: 2 }, '<')
-        .to(content[0], { rotate: 360, duration: 2 }, '<')
         .repeat(-1)
         .yoyo(true);
     }, box);
@@ -47,7 +33,11 @@ function Home() {
   }, []);
   return (
     <Container className='home basic__page'>
-      <h1>Basic GSAP demo</h1>
+      <h1>GSAP Exploration</h1>
+      <p>
+        This is a simple react project created to track my learning journey with GSAP. Below is the frist basic demo I created with GSAP and react.
+        You can find more such demos on the example page.
+      </p>
       <div className='boxes' ref={box}>
         <div className='box'>
           <span className='content'>1</span>

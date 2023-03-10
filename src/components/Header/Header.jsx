@@ -32,7 +32,7 @@ function Header() {
   return (
     <header className='header' ref={header}>
       <Container className='header-container'>
-        <span className='header__logo'>Logo</span>
+        <span className='header__logo'>GSAP</span>
         <div className='hamburger' onClick={toggleTimeline}>
           <div className='line' />
           <div className='line' />
@@ -41,13 +41,10 @@ function Header() {
         <nav className='nav' id='nav'>
           <ul className='nav__list'>
             <li>
-              <Link to='/'>Home</Link>
+              <Link onClick={toggleTimeline} to='/'>Home</Link>
             </li>
             <li>
-              <Link to='/about'>About</Link>
-            </li>
-            <li>
-              <Link to='/examples'>Examples</Link>
+              <Link onClick={toggleTimeline} to='/examples'>Examples</Link>
             </li>
           </ul>
         </nav>
