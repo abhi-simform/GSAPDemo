@@ -1,0 +1,24 @@
+@use '/src/assets/scss/variables.scss' as *;
+@use '/src/assets/scss/mixins.scss' as *;
+@use '/src/assets/scss/functions.scss' as *;
+
+.triggeranim {
+  .trigger {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .boxes {
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    &__box {
+      width: rem(100);
+      height: rem(100);
+      border-radius: 0.5rem;
+      display: grid;
+      place-content: center;
+      background-color: var(--cyan-500);
+      color: var(--white);
+    }
+  }
+}
