@@ -6,7 +6,7 @@
   .links {
     margin-top: 1rem;
     display: grid;
-    gap: 0.5rem;
+    gap: 1rem;
     @include breakpoint-up(md) {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -16,10 +16,11 @@
     &__item {
       padding: 0.5rem 1rem;
       background-color: var(--cyan-600);
-      border-radius: 0.5rem;
+      border-radius: 0.25rem;
       color: var(--white);
       padding-right: 2rem;
       position: relative;
+      font-weight: 500;
       &::after {
         content: '';
         position: absolute;

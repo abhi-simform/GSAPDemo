@@ -11,7 +11,7 @@
 }
 
 :root {
-  --font-family: 'Radio Canada', sans-serif;
+  --font-family: 'Space Grotesk', sans-serif;
   @each $color, $shades in $colors {
     @each $shade, $value in $shades {
       --#{"" + $color}-#{$shade}: #{$value};
