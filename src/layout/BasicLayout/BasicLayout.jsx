@@ -4,10 +4,10 @@ import './BasicLayout.scss';
 
 function BasicLayout() {
   return (
-    <div className='basic'>
+    <>
       <Header />
       <Outlet />
-    </div>
+    </>
   );
 }
 

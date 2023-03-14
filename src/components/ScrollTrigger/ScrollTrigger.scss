@@ -1,0 +1,28 @@
+@use '/src/assets/scss/variables.scss' as *;
+@use '/src/assets/scss/mixins.scss' as *;
+@use '/src/assets/scss/functions.scss' as *;
+
+.scrolltrigger {
+  .boxes {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    &__box {
+      width: rem(100);
+      height: rem(100);
+      border-radius: 0.5rem;
+      display: grid;
+      place-content: center;
+      background-color: var(--cyan-500);
+      color: var(--white);
+      &:nth-child(2n) {
+        justify-self: end;
+      }
+    }
+  }
+  .placeholder {
+    height: calc(100vh - rem(133));
+    display: grid;
+    place-content: center;
+  }
+}

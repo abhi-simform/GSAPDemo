@@ -1,0 +1,33 @@
+@use '/src/assets/scss/variables.scss' as *;
+@use '/src/assets/scss/mixins.scss' as *;
+@use '/src/assets/scss/functions.scss' as *;
+
+.btn {
+  border-radius: rem(4);
+  cursor: pointer;
+  font-weight: 500;
+  &--primary {
+    background-color: var(--cyan-500);
+    border: rem(1) solid var(--cyan-500);
+    color: var(--white);
+  }
+  &--outline {
+    background-color: transparent;
+    border: rem(1) solid var(--cyan-500);
+    color: var(--cyan-500);
+  }
+  &--regular {
+    padding: rem(8) rem(24);
+  }
+  &--small {
+    padding: 0 0;
+  }
+  &--large {
+    padding: rem(16) rem(48);
+  }
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+    pointer-events: none;
+  }
+}
