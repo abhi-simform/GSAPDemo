@@ -1,6 +1,8 @@
 import { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import Container from '../Container/Container';
+import PageTitle from '../PageTitle/PageTitle';
+import Button from '../Button/Button';
 import './ClickTrigger.scss';
 
 function ClickTrigger() {
@@ -25,10 +27,11 @@ function ClickTrigger() {
   }, []);
   return (
     <Container className='triggeranim'>
+      <PageTitle title='Animate on click' />
       <div className='trigger'>
-        <button onClick={toggleTimeline} type='primary' size='large'>
+        <Button onClick={toggleTimeline} variant='primary'>
           Click here to toggle animation
-        </button>
+        </Button>
       </div>
       <div className='boxes' ref={boxescontainer}>
         <div className='boxes__box'>Box 1</div>

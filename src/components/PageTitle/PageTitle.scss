@@ -1,0 +1,22 @@
+@use '/src/assets/scss/variables.scss' as *;
+@use '/src/assets/scss/mixins.scss' as *;
+@use '/src/assets/scss/functions.scss' as *;
+
+.title {
+  text-align: center;
+  padding: 1rem 0 1.5rem 0;
+  span {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 120%;
+      height: 1rem;
+      background-color: var(--cyan-100);
+      bottom: -0.25rem;
+      left: -10%;
+      z-index: -1;
+      clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+    }
+  }
+}

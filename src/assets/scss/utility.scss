@@ -12,3 +12,58 @@
     }
   }
 }
+
+@each $size in $sizes {
+  .mt-#{$size} {
+    margin-top: rem($size);
+  }
+  .mb-#{$size} {
+    margin-bottom: rem($size);
+  }
+  .ml-#{$size} {
+    margin-left: rem($size);
+  }
+  .mr-#{$size} {
+    margin-right: rem($size);
+  }
+  .mx-#{$size} {
+    margin-left: rem($size);
+    margin-right: rem($size);
+  }
+  .my-#{$size} {
+    margin-top: rem($size);
+    margin-bottom: rem($size);
+  }
+  .pt-#{$size} {
+    padding-top: rem($size);
+  }
+  .pb-#{$size} {
+    padding-bottom: rem($size);
+  }
+  .pl-#{$size} {
+    padding-left: rem($size);
+  }
+  .pr-#{$size} {
+    padding-right: rem($size);
+  }
+  .px-#{$size} {
+    padding-left: rem($size);
+    padding-right: rem($size);
+  }
+  .py-#{$size} {
+    padding-top: rem($size);
+    padding-bottom: rem($size);
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}

@@ -3,7 +3,6 @@ import BasicLayout from './layout/BasicLayout/BasicLayout';
 import Examples from './pages/Examples/Examples';
 import Home from './pages/Home/Home';
 import { exampleroutes } from './exampleroutes';
-import ExampleLayout from './layout/ExampleLayout/ExampleLayout';
 
 function App() {
   return (
@@ -13,7 +12,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path='/examples' element={<Examples />} />
         </Route>
-        <Route path='examples' element={<ExampleLayout />}>
+        <Route path='examples' element={<BasicLayout />}>
           {exampleroutes.map((element, index) => {
             const { path, component: Component } = element;
             return <Route key={index} path={path} element={<Component />} />;

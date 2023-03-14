@@ -1,6 +1,7 @@
 import { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import Container from '../../components/Container/Container';
+import PageTitle from '../../components/PageTitle/PageTitle';
 import './Home.scss';
 
 function Home() {
@@ -32,8 +33,8 @@ function Home() {
     return () => ctx.revert();
   }, []);
   return (
-    <Container className='home basic__page'>
-      <h1>GSAP Exploration</h1>
+    <Container className='home'>
+      <PageTitle title='GSAP Exploration' />
       <p>
         This is a simple react project created to track my learning journey with GSAP. Below is the frist basic demo I created with GSAP and react.
         You can find more such demos on the example page.

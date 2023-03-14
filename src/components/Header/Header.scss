@@ -3,7 +3,7 @@
 @use '/src/assets/scss/functions.scss' as *;
 
 .header {
-  box-shadow: var(--shadow-2);
+  border-bottom: 1px solid var(--gray-100);
   padding: 0.5rem 0;
   position: sticky;
   top: 0;

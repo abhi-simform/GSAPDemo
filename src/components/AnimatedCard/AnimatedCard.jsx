@@ -1,6 +1,7 @@
 import { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import Container from '../Container/Container';
+import PageTitle from '../PageTitle/PageTitle';
 import './AnimatedCard.scss';
 
 function AnimatedCard() {
@@ -34,6 +35,7 @@ function AnimatedCard() {
   }, []);
   return (
     <Container>
+      <PageTitle title='Animated Card' />
       <div className='screen' ref={screen}>
         <div className='screen__image'></div>
         <div className='screen__overlay'></div>
