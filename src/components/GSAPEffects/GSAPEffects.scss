@@ -2,20 +2,25 @@
 @use '/src/assets/scss/mixins.scss' as *;
 @use '/src/assets/scss/functions.scss' as *;
 
-.scrolltrigger {
+.gsapeffects {
   .boxes {
+    margin-top: 2rem;
     display: grid;
     gap: 1rem;
     grid-template-columns: 1fr 1fr;
+    @include breakpoint-up(sm) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
     &__box {
       &:nth-child(2n) {
         justify-self: end;
+        @include breakpoint-up(sm) {
+          justify-self: unset;
+        }
+      }
+      @include breakpoint-up(sm) {
+        justify-self: center;
       }
     }
-  }
-  .placeholder {
-    height: calc(100vh - rem(133));
-    display: grid;
-    place-content: center;
   }
 }

@@ -11,14 +11,5 @@
     display: grid;
     justify-content: center;
     gap: 1rem;
-    &__box {
-      width: rem(100);
-      height: rem(100);
-      border-radius: 0.5rem;
-      display: grid;
-      place-content: center;
-      background-color: var(--cyan-500);
-      color: var(--white);
-    }
   }
 }
