@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import './Container.scss';
 
 function Container(props) {
@@ -9,3 +10,8 @@ function Container(props) {
 }
 
 export default Container;
+
+Container.propTypes = {
+  fluid: PropTypes.bool,
+  className: PropTypes.string,
+};
