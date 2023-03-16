@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import './PageTitle.scss';
 
 function PageTitle(props) {
@@ -10,3 +11,7 @@ function PageTitle(props) {
 }
 
 export default PageTitle;
+
+PageTitle.propTypes = {
+  title: PropTypes.string,
+};

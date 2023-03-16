@@ -6,6 +6,7 @@
   border-radius: rem(4);
   cursor: pointer;
   font-weight: 500;
+  transition: transform 0.3 ease-in-out;
   &--primary {
     background-color: var(--cyan-500);
     border: rem(1) solid var(--cyan-500);
@@ -29,5 +30,8 @@
     cursor: not-allowed;
     opacity: 0.8;
     pointer-events: none;
+  }
+  &:active {
+    transform: scale(0.95);
   }
 }

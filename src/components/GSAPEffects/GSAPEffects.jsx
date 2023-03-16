@@ -2,8 +2,8 @@ import { useRef, useLayoutEffect } from 'react';
 import gsap from 'gsap';
 import Container from '../Container/Container';
 import PageTitle from '../PageTitle/PageTitle';
-import './GSAPEffects.scss';
 import PageDescription from '../PageDescription/PageDescription';
+import './GSAPEffects.scss';
 
 function GSAPEffects() {
   const boxesContainer = useRef();

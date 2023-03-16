@@ -2,6 +2,7 @@ import AnimatedCard from './components/AnimatedCard/AnimatedCard';
 import ClickTrigger from './components/ClickTrigger/ClickTrigger';
 import ScrollTrigger from './components/ScrollTrigger/ScrollTrigger';
 import GSAPEffects from './components/GSAPEffects/GSAPEffects';
+import GlobalTimeline from './components/GlobalTimeline/GlobalTimeline';
 
 export const exampleroutes = [
   {
@@ -31,6 +32,12 @@ export const exampleroutes = [
     name: 'GSAP Effects',
     path: 'gsapeffects',
     component: GSAPEffects,
+    newTab: false,
+  },
+  {
+    name: 'Global Timeline',
+    path: 'globaltimeline',
+    component: GlobalTimeline,
     newTab: false,
   },
 ];

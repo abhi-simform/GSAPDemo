@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import './Button.scss';
 
 const Button = (props) => {
@@ -8,3 +9,9 @@ const Button = (props) => {
 };
 
 export default Button;
+
+Button.propTypes = {
+  variant: PropTypes.oneOf(['primary', 'outline']),
+  size: PropTypes.oneOf(['regular', 'small', 'large']),
+  className: PropTypes.string,
+};
