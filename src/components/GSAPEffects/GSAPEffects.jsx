@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import Container from '../Container/Container';
 import PageTitle from '../PageTitle/PageTitle';
 import './GSAPEffects.scss';
+import PageDescription from '../PageDescription/PageDescription';
 
 function GSAPEffects() {
   const boxesContainer = useRef();
@@ -41,6 +42,10 @@ function GSAPEffects() {
   return (
     <Container className='gsapeffects'>
       <PageTitle title='GSAP Effects' />
+      <PageDescription
+        description='We can create pre-defined effects with gsap.registerEffects and apply these effects on elements according to our will which makes it easier to apply the same effect on multiple elements it also provides functionality to provide different values to for different elements.'
+        docLink='https://greensock.com/docs/v3/GSAP/gsap.effects'
+      />
       <div className='boxes' ref={boxesContainer}>
         <div className='boxes__box'>1</div>
         <div className='boxes__box'>2</div>

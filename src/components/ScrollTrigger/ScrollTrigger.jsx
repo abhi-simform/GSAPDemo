@@ -4,6 +4,7 @@ import { ScrollTrigger as ScrollTriggerGsap } from 'gsap/ScrollTrigger';
 import Container from '../Container/Container';
 import PageTitle from '../PageTitle/PageTitle';
 import './ScrollTrigger.scss';
+import PageDescription from '../PageDescription/PageDescription';
 
 gsap.registerPlugin(ScrollTriggerGsap);
 
@@ -42,6 +43,10 @@ function ScrollTrigger() {
   return (
     <Container className='scrolltrigger'>
       <PageTitle title='Animate on scroll' />
+      <PageDescription
+        description='We can control the animation using ScrollTriggerGsap plugin. Which means the animation is based on the scroll position of our viewport and the element there are multiple controls provided withing GSAP to achieve the exact effect that we want.'
+        docLink='https://stackblitz.com/edit/react-cxv92j'
+      />
       <section className='placeholder'>
         <h2>Scroll the page to see the animation</h2>
       </section>

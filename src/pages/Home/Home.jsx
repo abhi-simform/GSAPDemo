@@ -2,6 +2,7 @@ import { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import Container from '../../components/Container/Container';
 import PageTitle from '../../components/PageTitle/PageTitle';
+import PageDescription from '../../components/PageDescription/PageDescription';
 import './Home.scss';
 
 function Home() {
@@ -35,10 +36,10 @@ function Home() {
   return (
     <Container className='home'>
       <PageTitle title='GSAP Exploration' />
-      <p>
-        This is a simple react project created to track my learning journey with GSAP. Below is the frist basic demo I created with GSAP and react.
-        You can find more such demos on the example page.
-      </p>
+      <PageDescription
+        description='This is a simple react project created to track my learning journey with GSAP. Below is the frist basic demo I created with GSAP and react.
+        You can find more such demos on the example page.'
+      />
       <div className='boxes' ref={box}>
         <div className='box'>
           <span className='content'>1</span>

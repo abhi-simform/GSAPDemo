@@ -1,0 +1,13 @@
+@use '/src/assets/scss/variables.scss' as *;
+@use '/src/assets/scss/mixins.scss' as *;
+@use '/src/assets/scss/functions.scss' as *;
+
+.description {
+  max-width: 60ch;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+  a {
+    color: var(--cyan-500);
+    font-weight: 600;
+  }
+}

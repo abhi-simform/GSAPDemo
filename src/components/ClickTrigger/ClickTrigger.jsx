@@ -2,6 +2,7 @@ import { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import Container from '../Container/Container';
 import PageTitle from '../PageTitle/PageTitle';
+import PageDescription from '../PageDescription/PageDescription';
 import Button from '../Button/Button';
 import './ClickTrigger.scss';
 
@@ -28,6 +29,10 @@ function ClickTrigger() {
   return (
     <Container className='triggeranim'>
       <PageTitle title='Animate on click' />
+      <PageDescription
+        description='We can control the animation using a trigger with the use of GSAP by creating a function that triggers the animation on a button click'
+        docLink='https://stackblitz.com/edit/gsap-react-basic-f48716'
+      />
       <div className='trigger'>
         <Button onClick={toggleTimeline} variant='primary'>
           Click here to toggle animation

@@ -2,6 +2,7 @@ import { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import Container from '../Container/Container';
 import PageTitle from '../PageTitle/PageTitle';
+import PageDescription from '../PageDescription/PageDescription';
 import './AnimatedCard.scss';
 
 function AnimatedCard() {
@@ -36,6 +37,7 @@ function AnimatedCard() {
   return (
     <Container>
       <PageTitle title='Animated Card' />
+      <PageDescription description='This is a simple demonstration of a card animation which was converted from CSS animation to GSAP animation' />
       <div className='screen' ref={screen}>
         <div className='screen__image'></div>
         <div className='screen__overlay'></div>
