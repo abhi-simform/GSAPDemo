@@ -15,6 +15,7 @@ function App() {
         <Route path='examples' element={<BasicLayout />}>
           {exampleroutes.map((element, index) => {
             const { path, component: Component } = element;
+            if (!Component) return null;
             return <Route key={index} path={path} element={<Component />} />;
           })}
         </Route>

@@ -10,9 +10,9 @@ function Examples() {
       <PageTitle title='Examples' />
       <div className='links'>
         {exampleroutes?.map((link, index) => {
-          const { name, path } = link;
+          const { name, path, newTab } = link;
           return (
-            <Link key={index} className='links__item' to={path}>
+            <Link key={index} className='links__item' to={path} target={newTab ? '_blank' : '_self'}>
               {name}
             </Link>
           );
