@@ -3,6 +3,7 @@ import ClickTrigger from './components/ClickTrigger/ClickTrigger';
 import ScrollTrigger from './components/ScrollTrigger/ScrollTrigger';
 import GSAPEffects from './components/GSAPEffects/GSAPEffects';
 import GlobalTimeline from './components/GlobalTimeline/GlobalTimeline';
+import FromToSet from './components/FromToSet/FromToSet';
 
 export const exampleroutes = [
   {
@@ -38,6 +39,12 @@ export const exampleroutes = [
     name: 'Global Timeline',
     path: 'globaltimeline',
     component: GlobalTimeline,
+    newTab: false,
+  },
+  {
+    name: 'From, To & Set',
+    path: 'fromtoset',
+    component: FromToSet,
     newTab: false,
   },
 ];
