@@ -4,6 +4,7 @@ import ScrollTrigger from './components/ScrollTrigger/ScrollTrigger';
 import GSAPEffects from './components/GSAPEffects/GSAPEffects';
 import GlobalTimeline from './components/GlobalTimeline/GlobalTimeline';
 import FromToSet from './components/FromToSet/FromToSet';
+import MatchMedia from './components/MatchMedia/MatchMedia';
 
 export const exampleroutes = [
   {
@@ -45,6 +46,12 @@ export const exampleroutes = [
     name: 'From, To & Set',
     path: 'fromtoset',
     component: FromToSet,
+    newTab: false,
+  },
+  {
+    name: 'Responsive Controls',
+    path: 'matchmedia',
+    component: MatchMedia,
     newTab: false,
   },
 ];

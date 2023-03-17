@@ -40,7 +40,7 @@ function GSAPEffects() {
     return () => ctx.revert();
   });
   return (
-    <Container className='gsapeffects'>
+    <Container className='animation gsapeffects'>
       <PageTitle title='GSAP Effects' />
       <PageDescription
         description='We can create pre-defined effects with gsap.registerEffects and apply these effects on elements according to our will which makes it easier to apply the same effect on multiple elements it also provides functionality to provide different values to for different elements.'

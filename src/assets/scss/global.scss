@@ -81,6 +81,10 @@ a {
 
 @import './utility.scss';
 
+.animation {
+  padding-bottom: rem(50);
+}
+
 .boxes {
   &__box {
     width: rem(100);
