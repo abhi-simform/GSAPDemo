@@ -14,7 +14,7 @@ function FromToSet() {
       const boxes = self.selector('.boxes__box');
       tl.current = gsap
         .timeline()
-        .from(boxes[0], { x: size, duration: 2, delay: 1 }, '<')
+        .from(boxes[0], { x: size, duration: 2 }, '<')
         .from(boxes[0], { rotate: 360, duration: 2 }, '<')
         .from(boxes[0], { backgroundColor: '#e11d48', duration: 2 }, '<')
         .repeat(-1)
@@ -28,7 +28,7 @@ function FromToSet() {
       const boxes = self.selector('.boxes__box');
       tl.current = gsap
         .timeline()
-        .to(boxes[1], { x: size, duration: 2, delay: 1 }, '<')
+        .to(boxes[1], { x: size, duration: 2 }, '<')
         .to(boxes[1], { rotate: 360, duration: 2 }, '<')
         .to(boxes[1], { backgroundColor: '#e11d48', duration: 2 }, '<')
         .repeat(-1)
@@ -42,7 +42,7 @@ function FromToSet() {
       const boxes = self.selector('.boxes__box');
       tl.current = gsap
         .timeline()
-        .set(boxes[2], { x: size, delay: 3 }, '<')
+        .set(boxes[2], { x: size, delay: 2 }, '<')
         .set(boxes[2], { rotate: 360 }, '<')
         .set(boxes[2], { backgroundColor: '#e11d48' }, '<')
         .set(boxes[2], { x: 0, delay: 2 }, '<')
