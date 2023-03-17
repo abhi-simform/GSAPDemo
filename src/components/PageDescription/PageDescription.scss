@@ -3,9 +3,12 @@
 @use '/src/assets/scss/functions.scss' as *;
 
 .description {
-  max-width: 60ch;
+  max-width: 70ch;
   margin-inline: auto;
   margin-bottom: 2rem;
+  @include breakpoint-up(sm) {
+    font-size: 1.125rem;
+  }
   a {
     color: var(--cyan-500);
     font-weight: 600;

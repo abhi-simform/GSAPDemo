@@ -27,7 +27,7 @@ function ClickTrigger() {
     return () => ctx.revert();
   }, []);
   return (
-    <Container className='triggeranim'>
+    <Container className='animation triggeranim'>
       <PageTitle title='Animate on click' />
       <PageDescription
         description='We can control the animation using a trigger with the use of GSAP by creating a function that triggers the animation on a button click'

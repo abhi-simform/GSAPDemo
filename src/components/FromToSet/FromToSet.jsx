@@ -52,7 +52,7 @@ function FromToSet() {
     return () => ctx.revert();
   }, []);
   return (
-    <Container className='fromtoset'>
+    <Container className='animation fromtoset'>
       <PageTitle title='From, To and Set Methods' />
       <PageDescription
         description='From, To and Set are the most common methods used to create a tween in GSAP. To animates the element to the declared state, from animated the element from the declared state to its original state, and set is used to set the element to the declared state without animation'

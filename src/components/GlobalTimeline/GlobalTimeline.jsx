@@ -35,7 +35,7 @@ function GlobalTimeline() {
     return () => ctx.revert();
   }, []);
   return (
-    <Container className='globaltimeline'>
+    <Container className='animation globaltimeline'>
       <PageTitle title='Global Timeline' />
       <PageDescription
         description='GSAP provides a utility to control the play state of the global timeline using the globalTimeline utility function.'

@@ -35,7 +35,7 @@ function AnimatedCard() {
     return () => ctx.revert();
   }, []);
   return (
-    <Container>
+    <Container className='animation animatedcard'>
       <PageTitle title='Animated Card' />
       <PageDescription description='This is a simple demonstration of a card animation which was converted from CSS animation to GSAP animation' />
       <div className='screen' ref={screen}>
