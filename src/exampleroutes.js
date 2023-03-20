@@ -9,9 +9,33 @@ import TweenMethods from './components/TweenMethods/TweenMethods';
 
 export const exampleroutes = [
   {
-    name: 'Animated Card',
-    path: 'animatedcard',
-    component: AnimatedCard,
+    name: 'From, To & Set',
+    path: 'fromtoset',
+    component: FromToSet,
+    newTab: false,
+  },
+  {
+    name: 'Other Tween Methods',
+    path: 'tweenmethods',
+    component: TweenMethods,
+    newTab: false,
+  },
+  {
+    name: 'GSAP Effects',
+    path: 'gsapeffects',
+    component: GSAPEffects,
+    newTab: false,
+  },
+  {
+    name: 'Global Timeline',
+    path: 'globaltimeline',
+    component: GlobalTimeline,
+    newTab: false,
+  },
+  {
+    name: 'Responsive Controls',
+    path: 'matchmedia',
+    component: MatchMedia,
     newTab: false,
   },
   {
@@ -32,33 +56,9 @@ export const exampleroutes = [
     newTab: true,
   },
   {
-    name: 'GSAP Effects',
-    path: 'gsapeffects',
-    component: GSAPEffects,
-    newTab: false,
-  },
-  {
-    name: 'Global Timeline',
-    path: 'globaltimeline',
-    component: GlobalTimeline,
-    newTab: false,
-  },
-  {
-    name: 'From, To & Set',
-    path: 'fromtoset',
-    component: FromToSet,
-    newTab: false,
-  },
-  {
-    name: 'Other Tween Methods',
-    path: 'tweenmethods',
-    component: TweenMethods,
-    newTab: false,
-  },
-  {
-    name: 'Responsive Controls',
-    path: 'matchmedia',
-    component: MatchMedia,
+    name: 'Animated Card',
+    path: 'animatedcard',
+    component: AnimatedCard,
     newTab: false,
   },
 ];
