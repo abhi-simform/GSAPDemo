@@ -6,6 +6,7 @@ import GlobalTimeline from './components/GlobalTimeline/GlobalTimeline';
 import FromToSet from './components/FromToSet/FromToSet';
 import MatchMedia from './components/MatchMedia/MatchMedia';
 import TweenMethods from './components/TweenMethods/TweenMethods';
+import Eases from './components/Eases/Eases';
 
 export const exampleroutes = [
   {
@@ -24,6 +25,12 @@ export const exampleroutes = [
     name: 'GSAP Effects',
     path: 'gsapeffects',
     component: GSAPEffects,
+    newTab: false,
+  },
+  {
+    name: 'Eases',
+    path: 'eases',
+    component: Eases,
     newTab: false,
   },
   {

@@ -1,0 +1,21 @@
+@use '/src/assets/scss/variables.scss' as *;
+@use '/src/assets/scss/mixins.scss' as *;
+@use '/src/assets/scss/functions.scss' as *;
+
+.eases {
+  .boxes {
+    display: grid;
+    gap: 1rem;
+    &__box {
+      width: rem(50);
+      height: rem(50);
+      border-radius: 0.25rem;
+    }
+    .box {
+      &--wrapper {
+        display: grid;
+        gap: 0.5rem;
+      }
+    }
+  }
+}
