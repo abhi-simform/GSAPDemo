@@ -7,6 +7,7 @@ import FromToSet from './components/FromToSet/FromToSet';
 import MatchMedia from './components/MatchMedia/MatchMedia';
 import TweenMethods from './components/TweenMethods/TweenMethods';
 import Eases from './components/Eases/Eases';
+import DraggableBox from './components/DraggableBox/DraggableBox';
 
 export const exampleroutes = [
   {
@@ -61,6 +62,12 @@ export const exampleroutes = [
     name: 'Smooth scroll',
     path: 'https://stackblitz.com/edit/react-gbszpf',
     newTab: true,
+  },
+  {
+    name: 'Draggable Box',
+    path: 'draggable',
+    component: DraggableBox,
+    newTab: false,
   },
   {
     name: 'Animated Card',
