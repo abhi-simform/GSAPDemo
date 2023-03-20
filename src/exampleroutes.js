@@ -70,6 +70,11 @@ export const exampleroutes = [
     newTab: false,
   },
   {
+    name: 'SVG Drawing',
+    path: 'https://stackblitz.com/edit/react-hbnsjd',
+    newTab: true,
+  },
+  {
     name: 'Animated Card',
     path: 'animatedcard',
     component: AnimatedCard,
