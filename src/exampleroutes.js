@@ -5,6 +5,7 @@ import GSAPEffects from './components/GSAPEffects/GSAPEffects';
 import GlobalTimeline from './components/GlobalTimeline/GlobalTimeline';
 import FromToSet from './components/FromToSet/FromToSet';
 import MatchMedia from './components/MatchMedia/MatchMedia';
+import TweenMethods from './components/TweenMethods/TweenMethods';
 
 export const exampleroutes = [
   {
@@ -46,6 +47,12 @@ export const exampleroutes = [
     name: 'From, To & Set',
     path: 'fromtoset',
     component: FromToSet,
+    newTab: false,
+  },
+  {
+    name: 'Other Tween Methods',
+    path: 'tweenmethods',
+    component: TweenMethods,
     newTab: false,
   },
   {
