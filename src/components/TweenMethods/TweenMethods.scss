@@ -1,0 +1,16 @@
+@use '/src/assets/scss/variables.scss' as *;
+@use '/src/assets/scss/mixins.scss' as *;
+@use '/src/assets/scss/functions.scss' as *;
+
+.tweenmethods {
+  .boxes {
+    display: grid;
+    gap: 1rem;
+    .box {
+      &--wrapper {
+        display: grid;
+        gap: 0.5rem;
+      }
+    }
+  }
+}
