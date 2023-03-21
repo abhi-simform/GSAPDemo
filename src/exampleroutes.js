@@ -8,6 +8,7 @@ import MatchMedia from './components/MatchMedia/MatchMedia';
 import TweenMethods from './components/TweenMethods/TweenMethods';
 import Eases from './components/Eases/Eases';
 import DraggableBox from './components/DraggableBox/DraggableBox';
+import FlipElements from './components/FlipElements/FlipElements';
 
 export const exampleroutes = [
   {
@@ -67,6 +68,12 @@ export const exampleroutes = [
     name: 'Draggable Box',
     path: 'draggable',
     component: DraggableBox,
+    newTab: false,
+  },
+  {
+    name: 'Flip Plugin',
+    path: 'flip',
+    component: FlipElements,
     newTab: false,
   },
   {
