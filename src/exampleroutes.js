@@ -87,6 +87,11 @@ export const exampleroutes = [
     newTab: true,
   },
   {
+    name: 'Morph SVG Plugin',
+    path: 'https://stackblitz.com/edit/react-c1rpms',
+    newTab: true,
+  },
+  {
     name: 'Animated Card',
     path: 'animatedcard',
     component: AnimatedCard,
