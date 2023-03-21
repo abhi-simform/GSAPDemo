@@ -31,7 +31,6 @@ function Eases() {
       ];
       boxes.forEach((box, index) => {
         tl.current = gsap.timeline().to(box, { x: size, duration: 10, ease: eases[index] }).repeat(-1).yoyo(true);
-        console.log(eases[index]);
       });
     }, boxContainer);
     return () => ctx.revert();
