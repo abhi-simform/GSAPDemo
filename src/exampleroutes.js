@@ -82,6 +82,11 @@ export const exampleroutes = [
     newTab: true,
   },
   {
+    name: 'Inertia Plugin',
+    path: 'https://stackblitz.com/edit/react-vu1nuo',
+    newTab: true,
+  },
+  {
     name: 'Animated Card',
     path: 'animatedcard',
     component: AnimatedCard,
