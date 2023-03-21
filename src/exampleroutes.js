@@ -97,6 +97,11 @@ export const exampleroutes = [
     newTab: true,
   },
   {
+    name: 'Scramble Text Plugin',
+    path: 'https://stackblitz.com/edit/react-t3qyzz',
+    newTab: true,
+  },
+  {
     name: 'Animated Card',
     path: 'animatedcard',
     component: AnimatedCard,
