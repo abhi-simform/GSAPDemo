@@ -1,0 +1,25 @@
+@use '/src/assets/scss/variables.scss' as *;
+@use '/src/assets/scss/mixins.scss' as *;
+@use '/src/assets/scss/functions.scss' as *;
+
+.flip {
+  .boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &--alt {
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 2rem;
+      .box {
+        padding: 1rem;
+        background-color: var(--cyan-800);
+        color: var(--white);
+        border-radius: 0.5rem;
+      }
+      &.reorder {
+        flex-direction: row;
+      }
+    }
+  }
+}
