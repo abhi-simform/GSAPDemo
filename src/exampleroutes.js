@@ -92,6 +92,11 @@ export const exampleroutes = [
     newTab: true,
   },
   {
+    name: 'Physics2D Plugin',
+    path: 'https://stackblitz.com/edit/react-k1z3n1',
+    newTab: true,
+  },
+  {
     name: 'Animated Card',
     path: 'animatedcard',
     component: AnimatedCard,
