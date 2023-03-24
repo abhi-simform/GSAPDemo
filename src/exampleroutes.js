@@ -9,6 +9,7 @@ import TweenMethods from './components/TweenMethods/TweenMethods';
 import Eases from './components/Eases/Eases';
 import DraggableBox from './components/DraggableBox/DraggableBox';
 import FlipElements from './components/FlipElements/FlipElements';
+import FollowingMouse from './components/FollwoingMouse/FollowingMouse';
 
 export const exampleroutes = [
   {
@@ -105,6 +106,12 @@ export const exampleroutes = [
     name: 'Animated Card',
     path: 'animatedcard',
     component: AnimatedCard,
+    newTab: false,
+  },
+  {
+    name: 'Following Mouse',
+    path: 'followingmouse',
+    component: FollowingMouse,
     newTab: false,
   },
   {
