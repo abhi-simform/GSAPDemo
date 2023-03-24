@@ -107,4 +107,9 @@ export const exampleroutes = [
     component: AnimatedCard,
     newTab: false,
   },
+  {
+    name: 'GSAP Cheat Sheet',
+    path: 'https://greensock.com/cheatsheet/',
+    newTab: true,
+  },
 ];
