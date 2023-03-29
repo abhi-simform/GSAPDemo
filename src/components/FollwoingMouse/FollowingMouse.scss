@@ -1,0 +1,15 @@
+@use '/src/assets/scss/variables.scss' as *;
+@use '/src/assets/scss/mixins.scss' as *;
+@use '/src/assets/scss/functions.scss' as *;
+
+#circle {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 2rem;
+  background-color: var(--cyan-100);
+  filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
